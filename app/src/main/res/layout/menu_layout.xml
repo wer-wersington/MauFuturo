@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MenuActivity"
-    android:background="#393E46"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:background="#222831">
-    <ListView
-        android:id="@+id/listanoti"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </ListView>
-
-
-
-    </LinearLayout>
-
-
+        />
 
 
 
 </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="#222831"
+        tools:ignore="BottomAppBar">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/butaomenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFD369"
+            android:src="@drawable/baseline_add"
+            android:theme="@style/ThemeOverlay.Material3.DynamicColors.DayNight"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:layout_anchorGravity="center"
+            app:tint="@color/white" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</RelativeLayout>
