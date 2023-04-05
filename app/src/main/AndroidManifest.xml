@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MauFuturo"
         tools:targetApi="31">
         <activity
+            android:name=".SobreActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuSecundarioActivity"
             android:exported="false" />
         <activity
