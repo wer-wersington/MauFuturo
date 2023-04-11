@@ -8,12 +8,20 @@
     android:background="#393E46"
     tools:context=".MenuSecundarioActivity">
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maneiras de DESTRUIR uma cidade do futuro"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:textColor="#FDD369"
+        android:textStyle="bold"
+        android:gravity="center"/>
 
-    </ListView>
-
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListaMenu"
+        />
 
 </LinearLayout>
