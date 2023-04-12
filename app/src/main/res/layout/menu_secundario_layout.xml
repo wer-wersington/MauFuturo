@@ -18,10 +18,12 @@
         android:textStyle="bold"
         android:gravity="center"/>
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ListaMenu"
         />
+
 
 </LinearLayout>
