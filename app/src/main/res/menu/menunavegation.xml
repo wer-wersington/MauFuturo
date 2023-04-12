@@ -4,7 +4,7 @@
         android:id="@+id/page_1"
         android:enabled="true"
         android:icon="@drawable/baseline_report"
-        android:title="Bater"/>
+        android:title="Pulverizar"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
@@ -14,7 +14,7 @@
         android:id="@+id/page_3"
         android:enabled="true"
         android:icon="@drawable/baseline_sentiment_very_dissatisfied"
-        android:title="Matar"/>
+        android:title="Chutar"/>
     <item
         android:id="@+id/page_4"
         android:enabled="true"
