@@ -34,7 +34,8 @@
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".SplashActivity"
             android:exported="false" />
