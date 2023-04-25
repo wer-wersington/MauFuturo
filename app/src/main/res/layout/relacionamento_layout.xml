@@ -18,7 +18,7 @@
             android:layout_height="?attr/actionBarSize"
             app:title="title"
             app:menu="@menu/top_app_bar"
-            app:navigationIcon="@drawable/ic_menu_24dp"
+            app:navigationIcon="@drawable/baseline_whatshot"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             />
 
@@ -28,9 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

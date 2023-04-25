@@ -2,6 +2,7 @@ package br.com.etecia.maufuturo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +12,8 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     EditText login, senha;
-
     Button btnentrar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,28 +26,31 @@ public class LoginActivity extends AppCompatActivity {
         btnentrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            String usuario, pass;
+                String usuario, pass;
+                usuario = login.getText().toString();
+                pass = senha.getText().toString();
 
-            usuario = login.getText().toString();
-            pass = senha.getText().toString();
-
-
-            if (usuario.equals("admin") && senha.equals("admin")){
-            startActivity(new Intent(getApplicationContext(),MenuActivity.class));
-            finish();
-            }
-
-            else {
-                Toast.makeText(getApplicationContext(),
-                        "Acesso Negado",
-                        Toast.LENGTH_SHORT).show();
-                senha.setText("");
-                senha.requestFocus();
-            }
 
             }
+        });
 
+        btnentrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String usuario, pass;
+                usuario = login.getText().toString();
+                pass = senha.getText().toString();
 
+                if (usuario.equals("admin") && pass.equals("admin")) {
+                    startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Usuario ou senha incorretos", Toast.LENGTH_SHORT).show();
+                    login.setText("");
+                    senha.setText("");
+                    login.requestFocus();
+                }
+            }
         });
     }
 }
